@@ -1,4 +1,5 @@
-python-telegram-bot==20.9
+python-telegram-bot==20.8
 matplotlib==3.9.0
 pillow==10.4.0
+
 python-dotenv==1.0.1
