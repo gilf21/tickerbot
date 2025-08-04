@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tickerbot
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: TOKEN        # Telegram bot token
+        sync: false      # set manually בדשבורד
+      - key: PUBLIC_URL   # e.g. https://tickerbot.onrender.com
+        sync: false
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1
